@@ -1,4 +1,4 @@
-update=20/11/2017 22:42:39
+update=21/11/2017 00:56:50
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=../kicad-library;../lakotamm-kicad-lib
@@ -64,3 +62,5 @@ LibName32=valves
 LibName33=stm32
 LibName34=lakotamm-amplifier
 LibName35=lakotamm-motordriver
+[general]
+version=1
