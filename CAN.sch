@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -103,10 +103,6 @@ Text HLabel 6500 4100 2    60   BiDi ~ 0
 CANL
 Wire Wire Line
 	6400 4100 6500 4100
-Text HLabel 5350 4200 0    60   Input ~ 0
-CAN_S
-Wire Wire Line
-	5350 4200 5400 4200
 Text HLabel 5350 3900 0    60   Output ~ 0
 CAN_RX
 Wire Wire Line
@@ -163,4 +159,5 @@ F 3 "" H 5900 3550 50  0001 C CNN
 	1    5900 3550
 	1    0    0    -1  
 $EndComp
+NoConn ~ 5400 4200
 $EndSCHEMATC

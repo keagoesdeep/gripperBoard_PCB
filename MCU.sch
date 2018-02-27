@@ -39,7 +39,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 4 4
 Title ""
 Date ""
 Rev ""
@@ -540,9 +540,7 @@ VDD_ADC
 Text HLabel 9650 4000 2    60   Input ~ 0
 +5V_ADC
 Text HLabel 9650 4100 2    60   Input ~ 0
-Current_1
-Text HLabel 9650 4200 2    60   Input ~ 0
-Current_2
+Current
 Text HLabel 9650 5100 2    60   Output ~ 0
 CAN_TX
 Text HLabel 9650 5000 2    60   Input ~ 0
@@ -573,8 +571,6 @@ Wire Wire Line
 	9650 4000 9550 4000
 Wire Wire Line
 	9550 4100 9650 4100
-Wire Wire Line
-	9650 4200 9550 4200
 Wire Wire Line
 	9550 4900 9650 4900
 Wire Wire Line
@@ -703,14 +699,8 @@ Wire Wire Line
 Connection ~ 2350 3200
 Wire Wire Line
 	2350 3300 2350 3200
-Text HLabel 9650 5400 2    60   Output ~ 0
-CAN_S
-Wire Wire Line
-	9550 5400 9650 5400
-Text HLabel 9650 4300 2    60   Input ~ 0
+Text HLabel 9650 4200 2    60   Input ~ 0
 nFAULT_1
-Text HLabel 9650 4400 2    60   Input ~ 0
-nFAULT_2
 Wire Wire Line
 	9650 4300 9550 4300
 Wire Wire Line
@@ -724,22 +714,19 @@ DIR_1
 Wire Wire Line
 	3250 3900 3350 3900
 Text HLabel 3250 4000 0    60   Output ~ 0
-ENA_1
+ENA
 Text HLabel 3250 4100 0    60   Output ~ 0
 M1_1
 Text HLabel 3250 4900 0    60   Output ~ 0
 M1_0
 Wire Wire Line
 	3250 4900 3350 4900
-Text HLabel 3250 5000 0    60   Output ~ 0
-nSLEEP_1
 Wire Wire Line
 	3250 5000 3350 5000
 Text HLabel 3250 5100 0    60   Output ~ 0
 TRQ_1
 Text HLabel 3250 5200 0    60   Output ~ 0
 DECAY_1
-NoConn ~ 3350 5300
 Text HLabel 3250 5400 0    60   Output ~ 0
 DECAY_2
 Wire Wire Line
@@ -752,29 +739,18 @@ Wire Wire Line
 	3250 4100 3350 4100
 Wire Wire Line
 	3250 4000 3350 4000
-Text HLabel 3250 4200 0    60   Output ~ 0
-nSLEEP_2
 Text HLabel 3250 4300 0    60   Output ~ 0
 M0_2
 Text HLabel 3250 4400 0    60   Output ~ 0
 M1_2
-Text HLabel 3250 4500 0    60   Output ~ 0
-ENA_2
 Text HLabel 3250 4600 0    60   Output ~ 0
 DIR_2
 Wire Wire Line
 	3350 4600 3250 4600
 Wire Wire Line
-	3250 4500 3350 4500
-Wire Wire Line
 	3250 4400 3350 4400
 Wire Wire Line
 	3250 4300 3350 4300
-Wire Wire Line
-	3250 4200 3350 4200
-NoConn ~ 3350 3500
-NoConn ~ 3350 3600
-NoConn ~ 3350 3700
 Text Label 3250 3300 2    60   ~ 0
 BOOT0
 Wire Wire Line
@@ -848,4 +824,16 @@ $EndComp
 Connection ~ 2300 6300
 Text Notes 600  4650 0    60   ~ 0
 CubeMX shows which pins can be remapped\nwithout effecting functionality.\n\nThey are "unpinned" in the design.\nUpdate CubeMX file after changing Pinout!!!
+Text HLabel 3250 5000 0    60   Output ~ 0
+nSLEEP
+Text HLabel 9650 4400 2    60   Input ~ 0
+nFAULT_3
+Wire Wire Line
+	9650 4200 9550 4200
+Text HLabel 3250 3500 0    60   Input ~ 0
+nFAULT_2
+Wire Wire Line
+	3250 3500 3350 3500
+Text HLabel 9650 4300 2    60   Output ~ 0
+STEP_3
 $EndSCHEMATC
